@@ -1,0 +1,17 @@
+/* Zëvendësim lokal për Font Awesome — ikona unicode, pa CDN */
+.fas,.far,.fab{font-style:normal;font-weight:400;display:inline-block;line-height:1}
+.fa-bars::before{content:"\2630"}
+.fa-times::before{content:"\2715"}
+.fa-moon::before{content:"\263E"}
+.fa-sun::before{content:"\2600"}
+.fa-check::before{content:"\2713"}
+.fa-star::before{content:"\2605"}
+.fa-star-half-alt::before{content:"\2605"}
+.fa-search-dollar::before{content:"\1F50D"}
+.fa-envelope::before{content:"\2709"}
+.fa-map::before{content:"\1F5FA"}
+.fa-phone::before{content:"\260E"}
+.fa-facebook-f::before{content:"f";font-weight:700}
+.fa-twitter::before{content:"\1F426"}
+.fa-instagram::before{content:"\1F4F7"}
+.fa-github::before{content:"\2699"}
