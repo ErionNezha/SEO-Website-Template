@@ -76,7 +76,7 @@ footer strong{color:#9fb3c8}
 <script>
 const TREE={"dirs": [{"name": "demo", "dirs": [{"name": "css", "dirs": [], "files": ["fa-local.css", "style.css"]}, {"name": "images", "dirs": [], "files": ["home-img-1.png", "home-img-2.png", "home-img-3.png", "pic-1.png", "pic-2.png", "pic-3.png", "serv-1.png", "serv-2.png", "serv-3.png", "serv-4.png", "serv-5.png", "serv-6.png", "work-1.png", "work-2.png", "work-3.png", "work-4.png", "work-5.png", "work-6.png", "work-7.jpg", "work-8.jpg", "work-9.jpg"]}, {"name": "js", "dirs": [], "files": ["script.js"]}], "files": ["index.html"]}, {"name": "original", "dirs": [{"name": "css", "dirs": [], "files": ["style.css", "style.scss"]}, {"name": "images", "dirs": [], "files": ["home-img-1.png", "home-img-2.png", "home-img-3.png", "pic-1.png", "pic-2.png", "pic-3.png", "serv-1.png", "serv-2.png", "serv-3.png", "serv-4.png", "serv-5.png", "serv-6.png", "work-1.png", "work-2.png", "work-3.png", "work-4.png", "work-5.png", "work-6.png", "work-7.jpg", "work-8.jpg", "work-9.jpg"]}, {"name": "js", "dirs": [], "files": ["script.js"]}], "files": ["index.html", "liser-moi.html"]}], "files": ["PROVENANCE_LICENSE.txt"]};
 const CODEDIR="demo";
-function rpath(path){return path.startsWith("original/") ? path : CODEDIR+"/"+path;}
+function rpath(path){return /^(demo|original)\//.test(path) ? path : CODEDIR+"/"+path;}
 const IMG=/\.(png|jpe?g|gif|svg|webp|ico|bmp)$/i;
 function show(id,btn){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById('p-'+id).classList.add('active');document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');}
 function buildTree(){
